@@ -85,10 +85,12 @@ def main():
             if i == 0:
                 fieldnames = result.keys()
                 writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-                writer.writeheader()
+                #writer.writeheader()
                 writer.writerow(result)
             else:
                 writer.writerow(result)
+
+        # remove header row introduced in level2
 
     # big events
     with open('all_big_metrics.csv', mode='w') as csv_file:
@@ -110,7 +112,7 @@ def main():
             if i == 0:
                 fieldnames = result.keys()
                 writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-                writer.writeheader()
+                #writer.writeheader()
                 writer.writerow(result)
             else:
                 writer.writerow(result)
