@@ -1,0 +1,1062 @@
+==43822== NVPROF is profiling process 43822, command: ./FFT -s 1 -n 3
+==43822== Some kernel(s) will be replayed on device 2 in order to collect all events/metrics.
+==43822== Profiling application: ./FFT -s 1 -n 3
+==43822== Profiling result:
+==43822== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_per_warp","Instructions per warp",82.000000,82.000000,82.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",73.170732%,73.170732%,73.170732%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.022675,0.030535,0.025311
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gld_transactions_per_request","Global Load Transactions Per Request",32.000488,32.000488,32.000488
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gst_transactions_per_request","Global Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_store_transactions","Shared Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_load_transactions","Shared Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_store_transactions","Local Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gld_transactions","Global Load Transactions",131074,131074,131074
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gst_transactions","Global Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_read_transactions","L2 Read Transactions",32864,33152,32960
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_write_transactions","L2 Write Transactions",13,13,13
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_read_transactions","Device Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_write_transactions","Device Memory Write Transactions",68,88,76
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_hit_rate","Local Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gld_requested_throughput","Requested Global Load Throughput",251.108897GB/s,253.323606GB/s,252.124569GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gst_requested_throughput","Requested Global Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gld_throughput","Global Load Throughput",251.108897GB/s,253.323606GB/s,252.124569GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gst_throughput","Global Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_write_throughput","Device Memory Write Throughput",535.396107MB/s,690.549466MB/s,601.421904MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"tex_cache_throughput","Unified Cache Throughput",251.108897GB/s,253.323606GB/s,252.124569GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",251.108897GB/s,253.323606GB/s,252.124569GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_read_throughput","L2 Throughput (Reads)",252.689247GB/s,254.065765GB/s,253.601862GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_write_throughput","L2 Throughput (Writes)",102.012989MB/s,102.912714MB/s,102.425360MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_write_throughput","System Memory Write Throughput",39.235765MB/s,39.581813MB/s,39.394217MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_store_throughput","Local Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_store_throughput","Shared Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"gst_efficiency","Global Memory Store Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"tex_cache_transactions","Unified Cache Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_dp","Floating Point Operations(Double Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_dp_fma","Floating Point Operations(Double Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_dp_mul","Floating Point Operations(Double Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_sp","Floating Point Operations(Single Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_sp_add","Floating Point Operations(Single Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed","Instructions Executed",20992,20992,20992
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_issued","Instructions Issued",21468,21633,21523
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.160294%,4.174905%,4.166144%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.987524%,7.021273%,7.005183%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",62.201872%,62.307268%,62.258309%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_texture","Issue Stall Reasons (Texture)",3.347360%,3.392203%,3.372549%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_other","Issue Stall Reasons (Other)",1.846274%,1.992805%,1.933904%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",17.799050%,17.948413%,17.850133%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.820841%,0.822999%,0.821731%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_fp_32","FP Instructions(Single)",131072,131072,131072
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_fp_64","FP Instructions(Double)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_integer","Integer Instructions",106496,106496,106496
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_bit_convert","Bit-Convert Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_control","Control-Flow Instructions",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_compute_ld_st","Load/Store Instructions",131072,131072,131072
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_misc","Misc Instructions",114688,114688,114688
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"issue_slots","Issue Slots",19164,19280,19203
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"cf_issued","Issued Control-Flow Instructions",256,256,256
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"cf_executed","Executed Control-Flow Instructions",256,256,256
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"ldst_issued","Issued Load/Store Instructions",17152,17152,17152
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"ldst_executed","Executed Load/Store Instructions",6656,6656,6656
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"atomic_transactions_per_request","Atomic Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_atomic_transactions","L2 Transactions (Atomic requests)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",1.685083%,2.066927%,1.874635%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.705943%,0.725536%,0.717413%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_total_data_transmitted","NVLink Total Data Transmitted",576,608,586
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_total_data_received","NVLink Total Data Received",384,432,400
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_user_data_transmitted","NVLink User Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_user_data_received","NVLink User Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_overhead_data_transmitted","NVLink Overhead Data Transmitted",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_overhead_data_received","NVLink Overhead Data Received",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_total_nratom_data_transmitted","NVLink Total Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_user_nratom_data_transmitted","NVLink User Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_total_ratom_data_transmitted","NVLink Total Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_user_ratom_data_transmitted","NVLink User Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_total_write_data_transmitted","NVLink Total Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_user_write_data_transmitted","NVLink User Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_transmit_throughput","NVLink Transmit Throughput",141.722499MB/s,149.095907MB/s,144.446121MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_receive_throughput","NVLink Receive Throughput",94.481666MB/s,105.936565MB/s,98.485913MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_total_response_data_received","NVLink Total Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"nvlink_user_response_data_received","NVLink User Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_hp","Floating Point Operations(Half Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_hp_mul","Floating Point Operation(Half Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_count_hp_fma","Floating Point Operations(Half Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"ipc","Executed IPC",0.212296,0.214285,0.213365
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"issued_ipc","Issued IPC",0.217895,0.219154,0.218487
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"issue_slot_utilization","Issue Slot Utilization",9.725563%,9.781754%,9.751974%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sm_efficiency","Multiprocessor Activity",23.050443%,24.108886%,23.736942%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"achieved_occupancy","Achieved Occupancy",0.068104,0.068223,0.068179
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.224039,0.224905,0.224408
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"shared_utilization","Shared Memory Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_utilization","L2 Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"tex_utilization","Unified Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"ldst_fu_utilization","Load/Store Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"special_fu_utilization","Special Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_hp_efficiency","FLOP Efficiency(Peak Half)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_read_utilization","System Memory Read Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"pcie_total_data_transmitted","PCIe Total Data Transmitted",0,512,341
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"pcie_total_data_received","PCIe Total Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_global_loads","Warp level instructions for global loads",4096,4096,4096
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_local_loads","Warp level instructions for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_shared_loads","Warp level instructions for shared loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_surface_loads","Warp level instructions for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_global_stores","Warp level instructions for global stores",1792,1792,1792
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_local_stores","Warp level instructions for local stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_shared_stores","Warp level instructions for shared stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_surface_stores","Warp level instructions for surface stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_global_atomics","Warp level instructions for global atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_global_reductions","Warp level instructions for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_surface_atomics","Warp level instructions for surface atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_surface_reductions","Warp level instructions for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_shared_atomics","Warp level shared instructions for atom and atom CAS",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"inst_executed_tex_ops","Warp level instructions for texture",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_global_load_bytes","Bytes read from L2 for misses in Unified Cache for global loads",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_local_load_bytes","Bytes read from L2 for misses in Unified Cache for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_surface_load_bytes","Bytes read from L2 for misses in Unified Cache for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_read_bytes","Total bytes read from DRAM to L2 cache",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"dram_write_bytes","Total bytes written from L2 cache to DRAM",2176,2816,2442
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_local_global_store_bytes","Bytes written to L2 from Unified Cache for local and global stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_global_reduction_bytes","Bytes written to L2 from Unified cache for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_global_atomic_store_bytes","Bytes written to L2 from Unified cache for global atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_surface_store_bytes","Bytes written to L2 from Unified Cache for surface stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_surface_reduction_bytes","Bytes written to L2 from Unified Cache for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_surface_atomic_store_bytes","Bytes transferred between Unified Cache and L2 for surface atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"global_load_requests","Total number of global load requests from Multiprocessor",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_load_requests","Total number of local load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"surface_load_requests","Total number of surface load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"global_store_requests","Total number of global store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"local_store_requests","Total number of local store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"surface_store_requests","Total number of surface store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"global_atomic_requests","Total number of global atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"global_reduction_requests","Total number of global reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"surface_atomic_requests","Total number of surface atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"surface_reduction_requests","Total number of surface reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_read_bytes","System Memory Read Bytes",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"sysmem_write_bytes","System Memory Write Bytes",160,160,160
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"l2_tex_hit_rate","L2 Cache Hit Rate",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"texture_load_requests","Total number of texture Load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<float2>(float2 const *, int, char*)",3,"unique_warps_launched","Number of warps launched",256,256,256
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_per_warp","Instructions per warp",82.000000,82.000000,82.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",73.170732%,73.170732%,73.170732%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.024390,0.024390,0.024390
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gld_transactions_per_request","Global Load Transactions Per Request",64.000977,64.000977,64.000977
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gst_transactions_per_request","Global Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_store_transactions","Shared Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_load_transactions","Shared Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_store_transactions","Local Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gld_transactions","Global Load Transactions",131074,131074,131074
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gst_transactions","Global Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_read_transactions","L2 Read Transactions",32864,33152,32960
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_write_transactions","L2 Write Transactions",13,13,13
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_read_transactions","Device Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_write_transactions","Device Memory Write Transactions",24,40,29
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_hit_rate","Local Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gld_requested_throughput","Requested Global Load Throughput",236.112790GB/s,237.548650GB/s,236.723295GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gst_requested_throughput","Requested Global Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gld_throughput","Global Load Throughput",236.112790GB/s,237.548650GB/s,236.723295GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gst_throughput","Global Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_write_throughput","Device Memory Write Throughput",177.084592MB/s,295.641347MB/s,216.996122MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"tex_cache_throughput","Unified Cache Throughput",236.112790GB/s,237.548650GB/s,236.723295GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",236.112790GB/s,237.548650GB/s,236.723295GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_read_throughput","L2 Throughput (Reads)",237.205988GB/s,238.879737GB/s,238.110345GB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_write_throughput","L2 Throughput (Writes)",95.920820MB/s,96.504139MB/s,96.168607MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_write_throughput","System Memory Write Throughput",36.892623MB/s,37.116976MB/s,36.987783MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_store_throughput","Local Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_store_throughput","Shared Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"gst_efficiency","Global Memory Store Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"tex_cache_transactions","Unified Cache Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_dp","Floating Point Operations(Double Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_dp_fma","Floating Point Operations(Double Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_dp_mul","Floating Point Operations(Double Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_sp","Floating Point Operations(Single Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_sp_add","Floating Point Operations(Single Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed","Instructions Executed",10496,10496,10496
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_issued","Instructions Issued",10752,10752,10752
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.800237%,2.821192%,2.809004%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.225324%,7.236010%,7.229378%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",65.893876%,66.368566%,66.204188%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_other","Issue Stall Reasons (Other)",1.528332%,1.549404%,1.537195%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",18.668384%,18.725567%,18.698025%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.686164%,1.696010%,1.692516%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_fp_32","FP Instructions(Single)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_fp_64","FP Instructions(Double)",65536,65536,65536
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_integer","Integer Instructions",53248,53248,53248
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_bit_convert","Bit-Convert Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_control","Control-Flow Instructions",4096,4096,4096
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_compute_ld_st","Load/Store Instructions",65536,65536,65536
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_misc","Misc Instructions",57344,57344,57344
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"issue_slots","Issue Slots",9472,9472,9472
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"cf_issued","Issued Control-Flow Instructions",128,128,128
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"cf_executed","Executed Control-Flow Instructions",128,128,128
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"ldst_issued","Issued Load/Store Instructions",8576,8576,8576
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"ldst_executed","Executed Load/Store Instructions",3328,3328,3328
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"atomic_transactions_per_request","Atomic Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_atomic_transactions","L2 Transactions (Atomic requests)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",1.539166%,2.007591%,1.724278%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.105092%,0.105641%,0.105416%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_total_data_transmitted","NVLink Total Data Transmitted",576,1120,757
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_total_data_received","NVLink Total Data Received",384,1200,656
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_user_data_transmitted","NVLink User Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_user_data_received","NVLink User Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_overhead_data_transmitted","NVLink Overhead Data Transmitted",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_overhead_data_received","NVLink Overhead Data Received",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_total_nratom_data_transmitted","NVLink Total Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_user_nratom_data_transmitted","NVLink User Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_total_ratom_data_transmitted","NVLink Total Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_user_ratom_data_transmitted","NVLink User Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_total_write_data_transmitted","NVLink Total Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_user_write_data_transmitted","NVLink User Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_transmit_throughput","NVLink Transmit Throughput",133.038606MB/s,258.248363MB/s,175.076372MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_receive_throughput","NVLink Receive Throughput",88.692404MB/s,276.694675MB/s,151.650629MB/s
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_total_response_data_received","NVLink Total Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"nvlink_user_response_data_received","NVLink User Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_hp","Floating Point Operations(Half Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_hp_mul","Floating Point Operation(Half Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_count_hp_fma","Floating Point Operations(Half Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"ipc","Executed IPC",0.094370,0.094568,0.094464
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"issued_ipc","Issued IPC",0.096780,0.097368,0.097099
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"issue_slot_utilization","Issue Slot Utilization",4.262941%,4.288845%,4.276981%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sm_efficiency","Multiprocessor Activity",24.585548%,25.755118%,25.343217%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"achieved_occupancy","Achieved Occupancy",0.035907,0.035988,0.035955
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.087572,0.088113,0.087867
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"shared_utilization","Shared Memory Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_utilization","L2 Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"tex_utilization","Unified Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"ldst_fu_utilization","Load/Store Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"special_fu_utilization","Special Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_hp_efficiency","FLOP Efficiency(Peak Half)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_read_utilization","System Memory Read Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"pcie_total_data_transmitted","PCIe Total Data Transmitted",0,512,170
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"pcie_total_data_received","PCIe Total Data Received",0,512,170
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_global_loads","Warp level instructions for global loads",2048,2048,2048
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_local_loads","Warp level instructions for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_shared_loads","Warp level instructions for shared loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_surface_loads","Warp level instructions for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_global_stores","Warp level instructions for global stores",896,896,896
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_local_stores","Warp level instructions for local stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_shared_stores","Warp level instructions for shared stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_surface_stores","Warp level instructions for surface stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_global_atomics","Warp level instructions for global atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_global_reductions","Warp level instructions for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_surface_atomics","Warp level instructions for surface atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_surface_reductions","Warp level instructions for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_shared_atomics","Warp level shared instructions for atom and atom CAS",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"inst_executed_tex_ops","Warp level instructions for texture",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_global_load_bytes","Bytes read from L2 for misses in Unified Cache for global loads",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_local_load_bytes","Bytes read from L2 for misses in Unified Cache for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_surface_load_bytes","Bytes read from L2 for misses in Unified Cache for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_read_bytes","Total bytes read from DRAM to L2 cache",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"dram_write_bytes","Total bytes written from L2 cache to DRAM",768,1280,938
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_local_global_store_bytes","Bytes written to L2 from Unified Cache for local and global stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_global_reduction_bytes","Bytes written to L2 from Unified cache for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_global_atomic_store_bytes","Bytes written to L2 from Unified cache for global atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_surface_store_bytes","Bytes written to L2 from Unified Cache for surface stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_surface_reduction_bytes","Bytes written to L2 from Unified Cache for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_surface_atomic_store_bytes","Bytes transferred between Unified Cache and L2 for surface atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"global_load_requests","Total number of global load requests from Multiprocessor",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_load_requests","Total number of local load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"surface_load_requests","Total number of surface load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"global_store_requests","Total number of global store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"local_store_requests","Total number of local store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"surface_store_requests","Total number of surface store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"global_atomic_requests","Total number of global atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"global_reduction_requests","Total number of global reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"surface_atomic_requests","Total number of surface atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"surface_reduction_requests","Total number of surface reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_read_bytes","System Memory Read Bytes",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"sysmem_write_bytes","System Memory Write Bytes",160,160,160
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"l2_tex_hit_rate","L2 Cache Hit Rate",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"texture_load_requests","Total number of texture Load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void chk512_device<double2>(double2 const *, int, char*)",3,"unique_warps_launched","Number of warps launched",128,128,128
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_per_warp","Instructions per warp",466.000000,466.000000,466.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.007066,0.007100,0.007083
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gld_transactions_per_request","Global Load Transactions Per Request",64.000977,64.000977,64.000977
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gst_transactions_per_request","Global Store Transactions Per Request",16.000000,16.000000,16.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_store_transactions","Shared Store Transactions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_load_transactions","Shared Load Transactions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_store_transactions","Local Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gld_transactions","Global Load Transactions",131074,131074,131074
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gst_transactions","Global Store Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_read_transactions","L2 Read Transactions",32872,33968,33240
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_write_transactions","L2 Write Transactions",32781,32781,32781
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_read_transactions","Device Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_write_transactions","Device Memory Write Transactions",16,40,30
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_hit_rate","Local Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gld_requested_throughput","Requested Global Load Throughput",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gst_requested_throughput","Requested Global Store Throughput",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gld_throughput","Global Load Throughput",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gst_throughput","Global Store Throughput",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_write_throughput","Device Memory Write Throughput",79.022697MB/s,197.844914MB/s,148.552067MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"tex_cache_throughput","Unified Cache Throughput",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",158.045396GB/s,159.049267GB/s,158.455703GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_read_throughput","L2 Throughput (Reads)",158.585590GB/s,164.072170GB/s,160.738146GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_write_throughput","L2 Throughput (Writes)",158.108097GB/s,159.112366GB/s,158.518567GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_write_throughput","System Memory Write Throughput",24.694592MB/s,24.851447MB/s,24.758549MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_store_throughput","Local Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_load_throughput","Shared Memory Load Throughput",316.090791GB/s,318.098534GB/s,316.911407GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_store_throughput","Shared Memory Store Throughput",316.090791GB/s,318.098534GB/s,316.911407GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"tex_cache_transactions","Unified Cache Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_dp","Floating Point Operations(Double Precision)",2523136,2523136,2523136
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",1179648,1179648,1179648
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_dp_fma","Floating Point Operations(Double Precision FMA)",475136,475136,475136
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_dp_mul","Floating Point Operations(Double Precision Mul)",393216,393216,393216
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_sp","Floating Point Operations(Single Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_sp_add","Floating Point Operations(Single Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed","Instructions Executed",119296,119296,119296
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_issued","Instructions Issued",120135,120141,120138
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.868484%,3.205720%,3.088446%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",15.578363%,17.395515%,16.743612%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",22.238363%,25.110113%,24.146327%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_texture","Issue Stall Reasons (Texture)",0.018299%,0.045325%,0.034738%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_sync","Issue Stall Reasons (Synchronization)",12.915594%,14.386871%,13.867255%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_other","Issue Stall Reasons (Other)",6.346657%,7.212329%,6.922314%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",7.133788%,7.977215%,7.688451%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",8.362011%,9.467553%,9.086033%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_efficiency","Shared Memory Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_fp_32","FP Instructions(Single)",344064,344064,344064
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_fp_64","FP Instructions(Double)",2048000,2048000,2048000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_integer","Integer Instructions",139264,139264,139264
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_bit_convert","Bit-Convert Instructions",360448,360448,360448
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_control","Control-Flow Instructions",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_compute_ld_st","Load/Store Instructions",712704,712704,712704
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_misc","Misc Instructions",204800,204800,204800
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"issue_slots","Issue Slots",106823,106829,106826
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"cf_issued","Issued Control-Flow Instructions",256,256,256
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"cf_executed","Executed Control-Flow Instructions",256,256,256
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"ldst_issued","Issued Load/Store Instructions",61696,61696,61696
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"ldst_executed","Executed Load/Store Instructions",26624,26624,26624
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"atomic_transactions_per_request","Atomic Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_atomic_transactions","L2 Transactions (Atomic requests)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",11.562747%,21.130430%,14.753437%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",3.408011%,3.866858%,3.669386%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_total_data_transmitted","NVLink Total Data Transmitted",576,576,576
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_total_data_received","NVLink Total Data Received",384,384,384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_user_data_transmitted","NVLink User Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_user_data_received","NVLink User Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_overhead_data_transmitted","NVLink Overhead Data Transmitted",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_overhead_data_received","NVLink Overhead Data Received",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_total_nratom_data_transmitted","NVLink Total Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_user_nratom_data_transmitted","NVLink User Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_total_ratom_data_transmitted","NVLink Total Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_user_ratom_data_transmitted","NVLink User Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_total_write_data_transmitted","NVLink Total Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_user_write_data_transmitted","NVLink User Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_transmit_throughput","NVLink Transmit Throughput",88.900535MB/s,89.465212MB/s,89.131178MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_receive_throughput","NVLink Receive Throughput",59.267023MB/s,59.643475MB/s,59.420733MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_total_response_data_received","NVLink Total Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"nvlink_user_response_data_received","NVLink User Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_hp","Floating Point Operations(Half Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_hp_mul","Floating Point Operation(Half Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_count_hp_fma","Floating Point Operations(Half Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"ipc","Executed IPC",0.457913,0.463104,0.459883
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"issued_ipc","Issued IPC",0.460884,0.466380,0.463049
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"issue_slot_utilization","Issue Slot Utilization",20.490712%,20.735168%,20.587024%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sm_efficiency","Multiprocessor Activity",44.785220%,45.135139%,44.999292%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"achieved_occupancy","Achieved Occupancy",0.066644,0.066855,0.066725
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.560569,0.565453,0.563647
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"shared_utilization","Shared Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_utilization","L2 Cache Utilization","Low (1)","Low (2)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"tex_utilization","Unified Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"ldst_fu_utilization","Load/Store Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"special_fu_utilization","Special Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Low (3)","Low (3)","Low (3)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_hp_efficiency","FLOP Efficiency(Peak Half)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",6.821469%,6.854059%,6.838819%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_read_utilization","System Memory Read Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"pcie_total_data_transmitted","PCIe Total Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"pcie_total_data_received","PCIe Total Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_global_loads","Warp level instructions for global loads",2048,2048,2048
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_local_loads","Warp level instructions for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_shared_loads","Warp level instructions for shared loads",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_surface_loads","Warp level instructions for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_global_stores","Warp level instructions for global stores",2048,2048,2048
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_local_stores","Warp level instructions for local stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_shared_stores","Warp level instructions for shared stores",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_surface_stores","Warp level instructions for surface stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_global_atomics","Warp level instructions for global atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_global_reductions","Warp level instructions for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_surface_atomics","Warp level instructions for surface atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_surface_reductions","Warp level instructions for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_shared_atomics","Warp level shared instructions for atom and atom CAS",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"inst_executed_tex_ops","Warp level instructions for texture",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_global_load_bytes","Bytes read from L2 for misses in Unified Cache for global loads",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_local_load_bytes","Bytes read from L2 for misses in Unified Cache for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_surface_load_bytes","Bytes read from L2 for misses in Unified Cache for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_read_bytes","Total bytes read from DRAM to L2 cache",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"dram_write_bytes","Total bytes written from L2 cache to DRAM",512,1280,960
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_local_global_store_bytes","Bytes written to L2 from Unified Cache for local and global stores.",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_global_reduction_bytes","Bytes written to L2 from Unified cache for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_global_atomic_store_bytes","Bytes written to L2 from Unified cache for global atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_surface_store_bytes","Bytes written to L2 from Unified Cache for surface stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_surface_reduction_bytes","Bytes written to L2 from Unified Cache for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_surface_atomic_store_bytes","Bytes transferred between Unified Cache and L2 for surface atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"global_load_requests","Total number of global load requests from Multiprocessor",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_load_requests","Total number of local load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"surface_load_requests","Total number of surface load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"global_store_requests","Total number of global store requests from Multiprocessor",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"local_store_requests","Total number of local store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"surface_store_requests","Total number of surface store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"global_atomic_requests","Total number of global atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"global_reduction_requests","Total number of global reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"surface_atomic_requests","Total number of surface atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"surface_reduction_requests","Total number of surface reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_read_bytes","System Memory Read Bytes",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"sysmem_write_bytes","System Memory Write Bytes",160,160,160
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"l2_tex_hit_rate","L2 Cache Hit Rate",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"texture_load_requests","Total number of texture Load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<double2, double>(double2*)",3,"unique_warps_launched","Number of warps launched",256,256,256
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_per_warp","Instructions per warp",453.000000,453.000000,453.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.007312,0.007360,0.007338
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.500000,1.500000,1.500000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",1.000000,1.000000,1.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gld_transactions_per_request","Global Load Transactions Per Request",32.000488,32.000488,32.000488
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gst_transactions_per_request","Global Store Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_store_transactions","Shared Store Transactions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_load_transactions","Shared Load Transactions",24576,24576,24576
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_store_transactions","Local Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gld_transactions","Global Load Transactions",131074,131074,131074
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gst_transactions","Global Store Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_read_transactions","L2 Read Transactions",32912,33920,33584
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_write_transactions","L2 Write Transactions",32781,32781,32781
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_read_transactions","Device Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_write_transactions","Device Memory Write Transactions",28,36,33
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_hit_rate","Local Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gld_requested_throughput","Requested Global Load Throughput",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gst_requested_throughput","Requested Global Store Throughput",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gld_throughput","Global Load Throughput",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gst_throughput","Global Store Throughput",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_write_throughput","Device Memory Write Throughput",150.783869MB/s,196.958195MB/s,181.091558MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"tex_cache_throughput","Unified Cache Throughput",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",172.324422GB/s,175.073951GB/s,173.848059GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_read_throughput","L2 Throughput (Reads)",174.933839GB/s,181.228895GB/s,178.177284GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_write_throughput","L2 Throughput (Writes)",172.392788GB/s,175.143408GB/s,173.917030GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_write_throughput","System Memory Write Throughput",26.925691MB/s,27.355305MB/s,27.163589MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_store_throughput","Local Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_load_throughput","Shared Memory Load Throughput",516.973266GB/s,525.221854GB/s,521.544179GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_store_throughput","Shared Memory Store Throughput",344.648844GB/s,350.147902GB/s,347.696119GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"tex_cache_transactions","Unified Cache Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_dp","Floating Point Operations(Double Precision)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_dp_fma","Floating Point Operations(Double Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_dp_mul","Floating Point Operations(Double Precision Mul)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_sp","Floating Point Operations(Single Precision)",5079040,5079040,5079040
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_sp_add","Floating Point Operations(Single Precision Add)",2359296,2359296,2359296
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",950272,950272,950272
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",819200,819200,819200
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",458752,458752,458752
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed","Instructions Executed",231936,231936,231936
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_issued","Instructions Issued",233632,233643,233638
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.580795%,5.470654%,4.882244%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.475122%,14.905273%,13.287789%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",22.108927%,26.218175%,23.479036%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_texture","Issue Stall Reasons (Texture)",0.068832%,0.081709%,0.074928%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_sync","Issue Stall Reasons (Synchronization)",15.534892%,18.608956%,16.591495%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_other","Issue Stall Reasons (Other)",6.148792%,7.375184%,6.576248%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",5.686257%,6.781485%,6.067438%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",2.061330%,2.481074%,2.201818%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_efficiency","Shared Memory Efficiency",80.000000%,80.000000%,80.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_fp_32","FP Instructions(Single)",4816896,4816896,4816896
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_fp_64","FP Instructions(Double)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_integer","Integer Instructions",278528,278528,278528
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_bit_convert","Bit-Convert Instructions",262144,262144,262144
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_control","Control-Flow Instructions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_compute_ld_st","Load/Store Instructions",1425408,1425408,1425408
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_misc","Misc Instructions",393216,393216,393216
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"issue_slots","Issue Slots",189996,190009,190004
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"cf_issued","Issued Control-Flow Instructions",512,512,512
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"cf_executed","Executed Control-Flow Instructions",512,512,512
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"ldst_issued","Issued Load/Store Instructions",90624,90624,90624
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"ldst_executed","Executed Load/Store Instructions",53248,53248,53248
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"atomic_transactions_per_request","Atomic Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_atomic_transactions","L2 Transactions (Atomic requests)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",9.068507%,23.552376%,18.707633%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",7.622555%,9.008983%,8.131371%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_total_data_transmitted","NVLink Total Data Transmitted",576,576,576
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_total_data_received","NVLink Total Data Received",384,384,384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_user_data_transmitted","NVLink User Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_user_data_received","NVLink User Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_overhead_data_transmitted","NVLink Overhead Data Transmitted",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_overhead_data_received","NVLink Overhead Data Received",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_total_nratom_data_transmitted","NVLink Total Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_user_nratom_data_transmitted","NVLink User Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_total_ratom_data_transmitted","NVLink Total Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_user_ratom_data_transmitted","NVLink User Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_total_write_data_transmitted","NVLink Total Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_user_write_data_transmitted","NVLink User Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_transmit_throughput","NVLink Transmit Throughput",96.932487MB/s,98.479097MB/s,97.789363MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_receive_throughput","NVLink Receive Throughput",64.621657MB/s,65.652731MB/s,65.192852MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_total_response_data_received","NVLink Total Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"nvlink_user_response_data_received","NVLink User Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_hp","Floating Point Operations(Half Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_hp_mul","Floating Point Operation(Half Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_count_hp_fma","Floating Point Operations(Half Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"ipc","Executed IPC",1.021907,1.028131,1.025135
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"issued_ipc","Issued IPC",1.032393,1.035680,1.033655
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"issue_slot_utilization","Issue Slot Utilization",41.979435%,42.113347%,42.030904%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sm_efficiency","Multiprocessor Activity",42.421139%,42.833579%,42.624785%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"achieved_occupancy","Achieved Occupancy",0.118922,0.119558,0.119227
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.454263,1.473453,1.463236
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"shared_utilization","Shared Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_utilization","L2 Cache Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"tex_utilization","Unified Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"ldst_fu_utilization","Load/Store Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (3)","Low (3)","Low (3)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"special_fu_utilization","Special Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Mid (5)","Mid (5)","Mid (5)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_hp_efficiency","FLOP Efficiency(Peak Half)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",7.441581%,7.496552%,7.475569%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.672143%,0.677108%,0.675213%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_read_utilization","System Memory Read Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"pcie_total_data_transmitted","PCIe Total Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"pcie_total_data_received","PCIe Total Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_global_loads","Warp level instructions for global loads",4096,4096,4096
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_local_loads","Warp level instructions for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_shared_loads","Warp level instructions for shared loads",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_surface_loads","Warp level instructions for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_global_stores","Warp level instructions for global stores",4096,4096,4096
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_local_stores","Warp level instructions for local stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_shared_stores","Warp level instructions for shared stores",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_surface_stores","Warp level instructions for surface stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_global_atomics","Warp level instructions for global atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_global_reductions","Warp level instructions for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_surface_atomics","Warp level instructions for surface atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_surface_reductions","Warp level instructions for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_shared_atomics","Warp level shared instructions for atom and atom CAS",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"inst_executed_tex_ops","Warp level instructions for texture",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_global_load_bytes","Bytes read from L2 for misses in Unified Cache for global loads",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_local_load_bytes","Bytes read from L2 for misses in Unified Cache for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_surface_load_bytes","Bytes read from L2 for misses in Unified Cache for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_read_bytes","Total bytes read from DRAM to L2 cache",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"dram_write_bytes","Total bytes written from L2 cache to DRAM",896,1152,1066
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_local_global_store_bytes","Bytes written to L2 from Unified Cache for local and global stores.",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_global_reduction_bytes","Bytes written to L2 from Unified cache for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_global_atomic_store_bytes","Bytes written to L2 from Unified cache for global atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_surface_store_bytes","Bytes written to L2 from Unified Cache for surface stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_surface_reduction_bytes","Bytes written to L2 from Unified Cache for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_surface_atomic_store_bytes","Bytes transferred between Unified Cache and L2 for surface atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"global_load_requests","Total number of global load requests from Multiprocessor",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_load_requests","Total number of local load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"surface_load_requests","Total number of surface load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"global_store_requests","Total number of global store requests from Multiprocessor",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"local_store_requests","Total number of local store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"surface_store_requests","Total number of surface store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"global_atomic_requests","Total number of global atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"global_reduction_requests","Total number of global reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"surface_atomic_requests","Total number of surface atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"surface_reduction_requests","Total number of surface reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_read_bytes","System Memory Read Bytes",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"sysmem_write_bytes","System Memory Write Bytes",160,160,160
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"l2_tex_hit_rate","L2 Cache Hit Rate",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"texture_load_requests","Total number of texture Load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<float2, float>(float2*)",3,"unique_warps_launched","Number of warps launched",512,512,512
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_per_warp","Instructions per warp",481.000000,481.000000,481.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.008470,0.008665,0.008549
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gld_transactions_per_request","Global Load Transactions Per Request",64.000977,64.000977,64.000977
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gst_transactions_per_request","Global Store Transactions Per Request",16.000000,16.000000,16.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_store_transactions","Shared Store Transactions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_load_transactions","Shared Load Transactions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_store_transactions","Local Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gld_transactions","Global Load Transactions",131074,131074,131074
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gst_transactions","Global Store Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_read_transactions","L2 Read Transactions",32880,34000,33624
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_write_transactions","L2 Write Transactions",32781,32781,32781
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_read_transactions","Device Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_write_transactions","Device Memory Write Transactions",16,32,22
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_hit_rate","Local Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gld_requested_throughput","Requested Global Load Throughput",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gst_requested_throughput","Requested Global Store Throughput",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gld_throughput","Global Load Throughput",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gst_throughput","Global Store Throughput",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_write_throughput","Device Memory Write Throughput",78.175032MB/s,155.553122MB/s,110.470718MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"tex_cache_throughput","Unified Cache Throughput",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",155.553122GB/s,156.350064GB/s,155.958877GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_read_throughput","L2 Throughput (Reads)",156.084798GB/s,162.190289GB/s,160.032998GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_write_throughput","L2 Throughput (Writes)",155.614834GB/s,156.412093GB/s,156.020750GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_write_throughput","System Memory Write Throughput",24.305175MB/s,24.429697MB/s,24.368422MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_store_throughput","Local Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_load_throughput","Shared Memory Load Throughput",311.106244GB/s,312.700128GB/s,311.917753GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_store_throughput","Shared Memory Store Throughput",311.106244GB/s,312.700128GB/s,311.917753GB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"tex_cache_transactions","Unified Cache Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_dp","Floating Point Operations(Double Precision)",2654208,2654208,2654208
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",1179648,1179648,1179648
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_dp_fma","Floating Point Operations(Double Precision FMA)",475136,475136,475136
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_dp_mul","Floating Point Operations(Double Precision Mul)",524288,524288,524288
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_sp","Floating Point Operations(Single Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_sp_add","Floating Point Operations(Single Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed","Instructions Executed",123136,123136,123136
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_issued","Instructions Issued",124184,124201,124195
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.766165%,3.069220%,2.868674%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",15.712381%,17.199154%,16.259888%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",22.201822%,23.806502%,22.742044%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_texture","Issue Stall Reasons (Texture)",0.017890%,0.019511%,0.018475%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_sync","Issue Stall Reasons (Synchronization)",12.814356%,14.440154%,13.452742%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_other","Issue Stall Reasons (Other)",8.171808%,9.110758%,8.607282%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",7.027571%,7.687219%,7.267218%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",8.940219%,9.634852%,9.191278%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_efficiency","Shared Memory Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_fp_32","FP Instructions(Single)",344064,344064,344064
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_fp_64","FP Instructions(Double)",2179072,2179072,2179072
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_integer","Integer Instructions",139264,139264,139264
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_bit_convert","Bit-Convert Instructions",360448,360448,360448
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_control","Control-Flow Instructions",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_compute_ld_st","Load/Store Instructions",712704,712704,712704
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_misc","Misc Instructions",196608,196608,196608
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"issue_slots","Issue Slots",112152,112169,112163
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"cf_issued","Issued Control-Flow Instructions",256,256,256
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"cf_executed","Executed Control-Flow Instructions",256,256,256
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"ldst_issued","Issued Load/Store Instructions",61696,61696,61696
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"ldst_executed","Executed Load/Store Instructions",26624,26624,26624
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"atomic_transactions_per_request","Atomic Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_atomic_transactions","L2 Transactions (Atomic requests)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",11.100292%,18.546492%,15.942813%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",3.432798%,3.932337%,3.649585%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_total_data_transmitted","NVLink Total Data Transmitted",576,704,618
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_total_data_received","NVLink Total Data Received",384,576,448
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_user_data_transmitted","NVLink User Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_user_data_received","NVLink User Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_overhead_data_transmitted","NVLink Overhead Data Transmitted",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_overhead_data_received","NVLink Overhead Data Received",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_total_nratom_data_transmitted","NVLink Total Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_user_nratom_data_transmitted","NVLink User Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_total_ratom_data_transmitted","NVLink Total Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_user_ratom_data_transmitted","NVLink User Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_total_write_data_transmitted","NVLink Total Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_user_write_data_transmitted","NVLink User Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_transmit_throughput","NVLink Transmit Throughput",87.498631MB/s,107.490668MB/s,94.225002MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_receive_throughput","NVLink Receive Throughput",58.332420MB/s,87.946911MB/s,68.231855MB/s
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_total_response_data_received","NVLink Total Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"nvlink_user_response_data_received","NVLink User Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_hp","Floating Point Operations(Half Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_hp_mul","Floating Point Operation(Half Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_count_hp_fma","Floating Point Operations(Half Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"ipc","Executed IPC",0.461661,0.465555,0.463532
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"issued_ipc","Issued IPC",0.465590,0.469524,0.467359
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"issue_slot_utilization","Issue Slot Utilization",21.023980%,21.201937%,21.104073%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sm_efficiency","Multiprocessor Activity",44.467035%,45.461115%,45.068651%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"achieved_occupancy","Achieved Occupancy",0.066635,0.067188,0.066871
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.579131,0.584044,0.581212
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"shared_utilization","Shared Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_utilization","L2 Cache Utilization","Low (1)","Low (2)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"tex_utilization","Unified Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"ldst_fu_utilization","Load/Store Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"special_fu_utilization","Special Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Low (3)","Low (3)","Low (3)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_hp_efficiency","FLOP Efficiency(Peak Half)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",6.939759%,7.099473%,7.035942%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_read_utilization","System Memory Read Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"pcie_total_data_transmitted","PCIe Total Data Transmitted",0,512,341
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"pcie_total_data_received","PCIe Total Data Received",0,512,170
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_global_loads","Warp level instructions for global loads",2048,2048,2048
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_local_loads","Warp level instructions for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_shared_loads","Warp level instructions for shared loads",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_surface_loads","Warp level instructions for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_global_stores","Warp level instructions for global stores",2048,2048,2048
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_local_stores","Warp level instructions for local stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_shared_stores","Warp level instructions for shared stores",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_surface_stores","Warp level instructions for surface stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_global_atomics","Warp level instructions for global atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_global_reductions","Warp level instructions for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_surface_atomics","Warp level instructions for surface atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_surface_reductions","Warp level instructions for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_shared_atomics","Warp level shared instructions for atom and atom CAS",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"inst_executed_tex_ops","Warp level instructions for texture",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_global_load_bytes","Bytes read from L2 for misses in Unified Cache for global loads",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_local_load_bytes","Bytes read from L2 for misses in Unified Cache for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_surface_load_bytes","Bytes read from L2 for misses in Unified Cache for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_read_bytes","Total bytes read from DRAM to L2 cache",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"dram_write_bytes","Total bytes written from L2 cache to DRAM",512,1024,725
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_local_global_store_bytes","Bytes written to L2 from Unified Cache for local and global stores.",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_global_reduction_bytes","Bytes written to L2 from Unified cache for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_global_atomic_store_bytes","Bytes written to L2 from Unified cache for global atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_surface_store_bytes","Bytes written to L2 from Unified Cache for surface stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_surface_reduction_bytes","Bytes written to L2 from Unified Cache for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_surface_atomic_store_bytes","Bytes transferred between Unified Cache and L2 for surface atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"global_load_requests","Total number of global load requests from Multiprocessor",8192,8192,8192
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_load_requests","Total number of local load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"surface_load_requests","Total number of surface load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"global_store_requests","Total number of global store requests from Multiprocessor",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"local_store_requests","Total number of local store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"surface_store_requests","Total number of surface store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"global_atomic_requests","Total number of global atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"global_reduction_requests","Total number of global reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"surface_atomic_requests","Total number of surface atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"surface_reduction_requests","Total number of surface reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_read_bytes","System Memory Read Bytes",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"sysmem_write_bytes","System Memory Write Bytes",160,160,160
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"l2_tex_hit_rate","L2 Cache Hit Rate",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"texture_load_requests","Total number of texture Load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void IFFT512_device<double2, double>(double2*)",3,"unique_warps_launched","Number of warps launched",256,256,256
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_per_warp","Instructions per warp",438.000000,438.000000,438.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_replay_overhead","Instruction Replay Overhead",0.008365,0.008504,0.008456
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.500000,1.500000,1.500000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",1.000000,1.000000,1.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gld_transactions_per_request","Global Load Transactions Per Request",32.000488,32.000488,32.000488
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gst_transactions_per_request","Global Store Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_store_transactions","Shared Store Transactions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_load_transactions","Shared Load Transactions",24576,24576,24576
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_store_transactions","Local Store Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gld_transactions","Global Load Transactions",131074,131074,131074
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gst_transactions","Global Store Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_read_transactions","L2 Read Transactions",32864,33872,33200
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_write_transactions","L2 Write Transactions",32781,32781,32781
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_read_transactions","Device Memory Read Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_write_transactions","Device Memory Write Transactions",20,40,32
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_hit_rate","Local Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gld_requested_throughput","Requested Global Load Throughput",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gst_requested_throughput","Requested Global Store Throughput",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gld_throughput","Global Load Throughput",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gst_throughput","Global Store Throughput",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_write_throughput","Device Memory Write Throughput",108.564845MB/s,216.245017MB/s,173.569798MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"tex_cache_throughput","Unified Cache Throughput",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",172.996014GB/s,174.013275GB/s,173.569968GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_read_throughput","L2 Throughput (Reads)",173.502838GB/s,179.876027GB/s,175.858244GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_write_throughput","L2 Throughput (Writes)",173.064647GB/s,174.082311GB/s,173.638829GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_write_throughput","System Memory Write Throughput",27.030626MB/s,27.189573MB/s,27.120137MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_store_throughput","Local Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_load_throughput","Shared Memory Load Throughput",518.988043GB/s,522.039825GB/s,520.709906GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_store_throughput","Shared Memory Store Throughput",345.992028GB/s,348.026550GB/s,347.139937GB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"tex_cache_transactions","Unified Cache Transactions",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_dp","Floating Point Operations(Double Precision)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_dp_fma","Floating Point Operations(Double Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_dp_mul","Floating Point Operations(Double Precision Mul)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_sp","Floating Point Operations(Single Precision)",4816896,4816896,4816896
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_sp_add","Floating Point Operations(Single Precision Add)",2359296,2359296,2359296
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",950272,950272,950272
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",557056,557056,557056
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",458752,458752,458752
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed","Instructions Executed",224256,224256,224256
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_issued","Instructions Issued",226132,226163,226152
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.520863%,4.773109%,4.687630%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.221910%,12.998765%,12.710227%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",21.891137%,23.430396%,22.877837%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_texture","Issue Stall Reasons (Texture)",0.108644%,0.141834%,0.130742%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_sync","Issue Stall Reasons (Synchronization)",15.249485%,17.007285%,16.055801%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_other","Issue Stall Reasons (Other)",16.924929%,17.899807%,17.517200%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",5.638816%,6.057481%,5.881939%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.898278%,2.025020%,1.980623%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_efficiency","Shared Memory Efficiency",80.000000%,80.000000%,80.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_fp_32","FP Instructions(Single)",4554752,4554752,4554752
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_fp_64","FP Instructions(Double)",229376,229376,229376
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_integer","Integer Instructions",278528,278528,278528
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_bit_convert","Bit-Convert Instructions",262144,262144,262144
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_control","Control-Flow Instructions",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_compute_ld_st","Load/Store Instructions",1425408,1425408,1425408
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_misc","Misc Instructions",409600,409600,409600
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"issue_slots","Issue Slots",180864,180904,180887
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"cf_issued","Issued Control-Flow Instructions",512,512,512
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"cf_executed","Executed Control-Flow Instructions",512,512,512
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"ldst_issued","Issued Load/Store Instructions",90624,90624,90624
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"ldst_executed","Executed Load/Store Instructions",53248,53248,53248
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"atomic_transactions_per_request","Atomic Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_atomic_transactions","L2 Transactions (Atomic requests)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",8.627477%,14.351828%,10.558155%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",7.161004%,8.067795%,7.599846%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_total_data_transmitted","NVLink Total Data Transmitted",576,640,597
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_total_data_received","NVLink Total Data Received",384,480,416
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_user_data_transmitted","NVLink User Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_user_data_received","NVLink User Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_overhead_data_transmitted","NVLink Overhead Data Transmitted",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_overhead_data_received","NVLink Overhead Data Received",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_total_nratom_data_transmitted","NVLink Total Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_user_nratom_data_transmitted","NVLink User Nratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_total_ratom_data_transmitted","NVLink Total Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_user_ratom_data_transmitted","NVLink User Ratom Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_total_write_data_transmitted","NVLink Total Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_user_write_data_transmitted","NVLink User Write Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_transmit_throughput","NVLink Transmit Throughput",97.708361MB/s,108.122508MB/s,101.248979MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_receive_throughput","NVLink Receive Throughput",65.138906MB/s,81.091881MB/s,70.512630MB/s
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_total_response_data_received","NVLink Total Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"nvlink_user_response_data_received","NVLink User Response Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_hp","Floating Point Operations(Half Precision)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_hp_mul","Floating Point Operation(Half Precision Mul)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_count_hp_fma","Floating Point Operations(Half Precision FMA)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"ipc","Executed IPC",0.991884,1.001872,0.997381
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"issued_ipc","Issued IPC",0.997833,1.010391,1.002846
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"issue_slot_utilization","Issue Slot Utilization",39.905482%,40.407305%,40.106562%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sm_efficiency","Multiprocessor Activity",41.360151%,42.262528%,41.907939%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"achieved_occupancy","Achieved Occupancy",0.118952,0.119445,0.119130
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.383050,1.436786,1.406632
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"shared_utilization","Shared Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_utilization","L2 Cache Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"tex_utilization","Unified Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"ldst_fu_utilization","Load/Store Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (3)","Low (3)","Low (3)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"special_fu_utilization","Special Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"single_precision_fu_utilization","Single-Precision Function Unit Utilization","Mid (4)","Mid (4)","Mid (4)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_hp_efficiency","FLOP Efficiency(Peak Half)",0.000000%,0.000000%,0.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",6.953565%,7.053531%,7.013845%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.662244%,0.671765%,0.667985%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_read_utilization","System Memory Read Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"pcie_total_data_transmitted","PCIe Total Data Transmitted",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"pcie_total_data_received","PCIe Total Data Received",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_global_loads","Warp level instructions for global loads",4096,4096,4096
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_local_loads","Warp level instructions for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_shared_loads","Warp level instructions for shared loads",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_surface_loads","Warp level instructions for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_global_stores","Warp level instructions for global stores",4096,4096,4096
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_local_stores","Warp level instructions for local stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_shared_stores","Warp level instructions for shared stores",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_surface_stores","Warp level instructions for surface stores",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_global_atomics","Warp level instructions for global atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_global_reductions","Warp level instructions for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_surface_atomics","Warp level instructions for surface atom and atom cas",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_surface_reductions","Warp level instructions for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_shared_atomics","Warp level shared instructions for atom and atom CAS",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"inst_executed_tex_ops","Warp level instructions for texture",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_global_load_bytes","Bytes read from L2 for misses in Unified Cache for global loads",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_local_load_bytes","Bytes read from L2 for misses in Unified Cache for local loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_surface_load_bytes","Bytes read from L2 for misses in Unified Cache for surface loads",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_read_bytes","Total bytes read from DRAM to L2 cache",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"dram_write_bytes","Total bytes written from L2 cache to DRAM",640,1280,1024
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_local_global_store_bytes","Bytes written to L2 from Unified Cache for local and global stores.",1048576,1048576,1048576
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_global_reduction_bytes","Bytes written to L2 from Unified cache for global reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_global_atomic_store_bytes","Bytes written to L2 from Unified cache for global atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_surface_store_bytes","Bytes written to L2 from Unified Cache for surface stores.",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_surface_reduction_bytes","Bytes written to L2 from Unified Cache for surface reductions",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_surface_atomic_store_bytes","Bytes transferred between Unified Cache and L2 for surface atomics",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"global_load_requests","Total number of global load requests from Multiprocessor",16384,16384,16384
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_load_requests","Total number of local load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"surface_load_requests","Total number of surface load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"global_store_requests","Total number of global store requests from Multiprocessor",32768,32768,32768
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"local_store_requests","Total number of local store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"surface_store_requests","Total number of surface store requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"global_atomic_requests","Total number of global atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"global_reduction_requests","Total number of global reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"surface_atomic_requests","Total number of surface atomic requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"surface_reduction_requests","Total number of surface reduction requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_read_bytes","System Memory Read Bytes",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"sysmem_write_bytes","System Memory Write Bytes",160,160,160
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"l2_tex_hit_rate","L2 Cache Hit Rate",100.000000%,100.000000%,100.000000%
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"texture_load_requests","Total number of texture Load requests from Multiprocessor",0,0,0
+"Tesla P100-SXM2-16GB (2)","void FFT512_device<float2, float>(float2*)",3,"unique_warps_launched","Number of warps launched",512,512,512

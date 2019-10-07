@@ -115,8 +115,10 @@ DoTest( const char* timerDesc, ResultDatabase& resultDB, OptionParser& opts )
             << arrayDims[0] << 'x' << arrayDims[1] << ':'
             << lDims[0] << 'x' << lDims[1];
 
-        unsigned int nPasses = (unsigned int)opts.getOptionInt( "passes" );
-        unsigned int nWarmupPasses = (unsigned int)opts.getOptionInt( "warmupPasses" );
+        //unsigned int nPasses = (unsigned int)opts.getOptionInt( "passes" );
+        unsigned int nPasses = (unsigned int)1;
+        //unsigned int nWarmupPasses = (unsigned int)opts.getOptionInt( "warmupPasses" );
+        unsigned int nWarmupPasses = (unsigned int)1;
 
 
         // compute the expected result on the host
@@ -396,7 +398,8 @@ RunBenchmark( ResultDatabase& resultDB, OptionParser& opts )
         }
 #endif // defined(PARALLEL)
         // resultDB requires neg entry for every possible result
-        int nPasses = (int)opts.getOptionInt( "passes" );
+        //int nPasses = (int)opts.getOptionInt( "passes" );
+        int nPasses = (int)1;
         for( int p = 0; p < nPasses; p++ )
         {
             resultDB.AddResult( (const char*)"DP_Sten2D", "N/A", "GFLOPS", FLT_MAX );
@@ -463,7 +466,8 @@ CheckOptions( const OptionParser& opts )
         throw InvalidArgValue( "number of validation errors to print must be non-negative" );
     }
 
-    int nWarmupPasses = opts.getOptionInt( "warmupPasses" );
+    //int nWarmupPasses = opts.getOptionInt( "warmupPasses" );
+    int nWarmupPasses = 1;
     if( nWarmupPasses < 0 )
     {
         throw InvalidArgValue( "number of warmup passes must be non-negative" );

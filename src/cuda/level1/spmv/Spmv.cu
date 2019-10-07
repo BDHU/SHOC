@@ -234,7 +234,8 @@ void csrTest(ResultDatabase& resultDB, OptionParser& op, floatType* h_val,
       int nBlocksScalar = (int) ceil((floatType) numRows / BLOCK_SIZE);
       int nBlocksVector = (int) ceil(numRows /
                   (floatType)(BLOCK_SIZE / WARP_SIZE));
-      int passes = op.getOptionInt("passes");
+      //int passes = op.getOptionInt("passes");
+      int passes = 1;
       int iters  = op.getOptionInt("iterations");
 
       // Results description info
@@ -390,7 +391,8 @@ void ellPackTest(ResultDatabase& resultDB, OptionParser& op, floatType* h_val,
                 numRows * sizeof(int2)));
     }
     int nBlocks = (int) ceil((floatType) cmSize / BLOCK_SIZE);
-    int passes = op.getOptionInt("passes");
+    //int passes = op.getOptionInt("passes");
+    int passes = 1;
     int iters  = op.getOptionInt("iterations");
     cudaEvent_t start, stop;
     CUDA_SAFE_CALL(cudaEventCreate(&start));
@@ -592,7 +594,8 @@ void RunBenchmark(ResultDatabase &resultDB, OptionParser &op)
     {
         std::cout << "Double precision not supported by chosen device, skipping" << std::endl;
         // driver script still needs entries for all tests, even if not run
-        int nPasses = (int)op.getOptionInt( "passes" );
+        //int nPasses = (int)op.getOptionInt( "passes" );
+        int nPasses = 1;
         for( unsigned int p = 0; p < nPasses; p++ )
         {
             resultDB.AddResult( (const char*)"CSR-Scalar-DP",

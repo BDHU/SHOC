@@ -77,7 +77,8 @@ RunBenchmark(ResultDatabase &resultDB, OptionParser &op)
         cout << "Skipping double precision test" << endl;
         char atts[1024] = "DP_Not_Supported";
         // resultDB requires neg entry for every possible result
-        int passes = op.getOptionInt("passes");
+        //int passes = op.getOptionInt("passes");
+        int passes = 1;
         for (int k = 0; k < passes; k++) {
             resultDB.AddResult("Scan-DP" , atts, "GB/s", FLT_MAX);
             resultDB.AddResult("Scan-DP_PCIe" , atts, "GB/s", FLT_MAX);
@@ -142,7 +143,8 @@ void RunTest(string testName, ResultDatabase &resultDB, OptionParser &op)
     cudaEventElapsedTime(&transferTime, start, stop);
     transferTime *= 1.e-3;
 
-    int passes = op.getOptionInt("passes");
+    //int passes = op.getOptionInt("passes");
+    int passes = 1;
     int iters = op.getOptionInt("iterations");
 
     cout << "Running benchmark with size " << size << endl;

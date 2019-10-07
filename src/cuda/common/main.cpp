@@ -57,7 +57,7 @@ void RunBenchmark(ResultDatabase &resultDB, OptionParser &op);
 // ****************************************************************************
 void EnumerateDevicesAndChoose(int chooseDevice, bool verbose)
 {
-    cudaSetDevice(chooseDevice);
+    cudaSetDevice(2);
     int actualdevice;
     cudaGetDevice(&actualdevice);
 
