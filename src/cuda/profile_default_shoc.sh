@@ -3,12 +3,11 @@ set -ue
 
 LEVEL1_BENCH_PATH=~/shoc/src/cuda/level1/
 #LEVEL1_NUM_BENCH=12
-LEVEL1_NUM_BENCH=2
+LEVEL1_NUM_BENCH=11
 LEVEL2_BENCH_PATH=~/shoc/src/cuda/level2/
-LEVEL2_NUM_BENCH=2
-#ALL_LEVEL1_BENCHMARKS=(bfs fft gemm md md5hash neuralnet reduction scan sort spmv stencil2d triad)
-ALL_LEVEL1_BENCHMARKS=(stencil2d triad)
-ALL_LEVEL2_BENCHMARKS=(qtclustering)
+LEVEL2_NUM_BENCH=1
+ALL_LEVEL1_BENCHMARKS=(bfs fft gemm md md5hash neuralnet reduction scan sort spmv stencil2d triad)
+ALL_LEVEL2_BENCHMARKS=(qtclustering s3d)
 
 
 profile_events_all () {
@@ -23,13 +22,13 @@ profile_events_all () {
 
 profile_metrics_all () {
     # first on level1
-    #for i in $(seq 0 $LEVEL1_NUM_BENCH)
-    #do
-    #    cd $LEVEL1_BENCH_PATH${ALL_LEVEL1_BENCHMARKS[$i]}
+    for i in $(seq 0 $LEVEL1_NUM_BENCH)
+    do
+        cd $LEVEL1_BENCH_PATH${ALL_LEVEL1_BENCHMARKS[$i]}
     #    #nvprof --profile-child-processes -e all --csv --log-file "%p" ./profile
-    #    ./run_small
-    #    ./run_big
-    #done
+        ./run_small
+        ./run_big
+    done
     
     # first on level2
     for i in $(seq 0 $LEVEL2_NUM_BENCH)
