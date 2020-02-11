@@ -8,9 +8,9 @@ metric_index = 3
 all_level1_bench = ['bfs','fft','gemm','md','md5hash','neuralnet','reduction','scan','sort','spmv','stencil2d','triad']
 all_level2_bench = ['s3d', 'qtclustering']
 
-metrics_path = '/home/edwardhu/shoc/src/cuda/'
-level1_metrics_path = '/home/edwardhu/shoc/src/cuda/' + 'level1/'
-level2_metrics_path = '/home/edwardhu/shoc/src/cuda/' + 'level2/'
+metrics_path = '/home/ed/Desktop/SHOC/src/cuda/'
+level1_metrics_path = '/home/ed/Desktop/SHOC/src/cuda/' + 'level1/'
+level2_metrics_path = '/home/ed/Desktop/SHOC/src/cuda/' + 'level2/'
 small_metrics_filename = '/metrics_small_zemaitis.csv'
 big_metrics_filename = '/metrics_big_zemaitis.csv'
 

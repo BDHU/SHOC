@@ -180,20 +180,78 @@ uvm_advise_prefetch <- data.frame(
 uvm_all <- merge(uvm, uvm_advise, by="uvm_row_names")
 uvm_all <- merge(uvm_all, uvm_advise_prefetch, by="uvm_row_names")
 uvm_melted <- reshape2::melt(uvm_all, id.var='uvm_row_names')
-
 ggplot(data=uvm_melted, aes(x=uvm_row_names, y = value, col=variable)) + 
-  xlab("Number of Nodes(Power of 2)") +
+  xlab("Number of Nodes (Power of 2)") +
   ylab("Speedup") +
   geom_line() +
   geom_point() +
   theme_minimal() +
-  theme(legend.key.size = unit(0.25, "cm"),
-        legend.position="bottom", legend.box = "horizontal", legend.title = element_blank()) +
-  scale_color_discrete(name="Cylinders",
+  theme(legend.key.size = unit(0.2, "cm"),
+        legend.position=c(0.18, 0.8), legend.box = "vertical", legend.title = element_blank(),
+        legend.box.background = element_rect(colour = "gray")) +
+  scale_color_manual(name="Cylinders",
                      labels=c("UM","UM+Advise","UM+Advise+Prefetch"),
-                     palette="Set1"
-                     ) +
-  theme(plot.margin = unit(c(0.05,0,0,0), "cm"))
+                     values=c("gray","orange","#4393C3")) +
+  theme(plot.margin = unit(c(0.1,0,0,0), "cm"))
+
+
+#second hyperq
+hyperq_row_names <- c(seq(0, 12, by=1))
+hyperq <- data.frame(
+  hyperq_row_names,
+  hype=c(0.99, 1.745, 2.54, 3.47, 3.75, 3.99, 4.12, 4.1, 4.123, 4.24, 4.25, 4.246, 4.233)
+)
+ggplot(data=hyperq, aes(x=hyperq_row_names, y = hype)) + 
+  xlab("Number of Instances (Power of 2)") +
+  scale_x_continuous(breaks=c(0,2,4,6,8,10,12)) +
+  ylab("Speedup") +
+  geom_line(color="dodgerblue2") +
+  geom_point(color="dodgerblue2") +
+  theme_minimal() +
+  theme(legend.key.size = unit(0.2, "cm"),
+        legend.position=c(0.18, 0.8), legend.box = "vertical", legend.title = element_blank(),
+        legend.box.background = element_rect(colour = "gray")) +
+  theme(plot.margin = unit(c(0.1,0,0,0), "cm"))
+
+# srad
+srad_row_names <- c(seq(1, 16, by=1))
+srad <- data.frame(
+  srad_row_names,
+  sradv=c(1.15, 1.148, 0.969, 1.039, 1.049, 1.011, 1.008, 1.026, 1.13, 1.16, 1.151, 0.876, 0.891, 0.890, 0.921,0.956)
+)
+ggplot(data=srad, aes(x=srad_row_names, y = sradv)) + 
+  xlab("Image Dimension (Multiple of 16)") +
+  scale_x_continuous(breaks=c(0,2,4,6,8,10,12,14,16)) +
+  ylab("Speedup") +
+  geom_line(color="dodgerblue2") +
+  geom_point(color="dodgerblue2") +
+  theme_minimal() +
+  theme(legend.key.size = unit(0.2, "cm"),
+        legend.position=c(0.18, 0.8), legend.box = "vertical", legend.title = element_blank(),
+        legend.box.background = element_rect(colour = "gray")) +
+  theme(plot.margin = unit(c(0.1,0,0,0), "cm"))
+
+# mandelbrot
+mand_row_names <- c(seq(5, 13, by=1))
+mand <- data.frame(
+  mand_row_names,
+  mandv=c(0.09, 0.11, 0.11, 0.38, 0.61, 1.43, 2.492, 3.12, 5.51)
+)
+ggplot(data=mand, aes(x=mand_row_names, y = mandv)) + 
+  xlab("Image Dimension (Power of 2)") +
+  scale_x_continuous(breaks=c(5,6,7,8,9,10,11,12,13)) +
+  scale_y_continuous(breaks=c(0,1.0,2.0,3,4,5,6.0)) +
+  ylab("Speedup") +
+  geom_line(color="dodgerblue2") +
+  geom_point(color="dodgerblue2") +
+  theme_minimal() +
+  theme(legend.key.size = unit(0.2, "cm"),
+        legend.position=c(0.18, 0.8), legend.box = "vertical", legend.title = element_blank(),
+        legend.box.background = element_rect(colour = "gray")) +
+  theme(plot.margin = unit(c(0.1,0,0,0), "cm"))
+
+
+
   #scale_size_discrete(palette = "Set3", name = "",
   #                  labels = c("UM", "UM+Advise", "UM+Advise+Prefetch"))
 
